@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/functions.js" defer></script>
     <title>Tienda de Modificaciones</title>
 </head>
 <body>
@@ -14,10 +15,12 @@
         <section class="header__menu">
             <i><img src="img/menu_4392671.png" alt="Icono Menu" class="header__icon"></i>
             <img src="img/mazda-wankel-rotary-logo-png_seeklogo-180640.png"alt="Logo Tienda" class="header__logo">
-            <i><img src="img/shopping-cart_2552277.png" alt="Icono Carrito" class="header__icon"></i>
+            <div class="cart-container">
+                <i><img src="img/shopping-cart_2552277.png" alt="Icono Carrito" class="header__icon" id="cart-icon"></i>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </div>
         </section>
     </header>
-
     <main>
         <section class="banner">
             <h2>Productos nuevos</h2>
@@ -28,63 +31,62 @@
                 <img src="img/catbacks13.jpg" alt="Catback s13" class="products__img">
                 <h3 class="products__title">Catback 240sx s13 KA24DE</h3>
                 <p class="products__price">$5,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>
             <article class="products__item">
                 <img src="img/catbackcivic0611.jpg" alt="Catback r18" class="products__img">
                 <h3 class="products__title">Catback Civic 06-11 R18</h3>
                 <p class="products__price">$4,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>  
             <article class="products__item">
                 <img src="img/coldairintaker18.jpg" alt="Cold air intake r18" class="products__img">
                 <h3 class="products__title">Cold Air Intake Civic 06-11 R18</h3>
                 <p class="products__price">$2,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>
             <article class="products__item">
                 <img src="img/catbacks13.jpg" alt="Catback s13" class="products__img">
                 <h3 class="products__title">Catback 240sx s13 KA24DE</h3>
                 <p class="products__price">$5,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>
             <article class="products__item">
                 <img src="img/catbackcivic0611.jpg" alt="Catback r18" class="products__img">
                 <h3 class="products__title">Catback Civic 06-11 R18</h3>
                 <p class="products__price">$4,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>  
             <article class="products__item">
                 <img src="img/coldairintaker18.jpg" alt="Cold air intake r18" class="products__img">
                 <h3 class="products__title">Cold Air Intake Civic 06-11 R18</h3>
                 <p class="products__price">$2,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article> 
             <article class="products__item">
                 <img src="img/catbacks13.jpg" alt="Catback s13" class="products__img">
                 <h3 class="products__title">Catback 240sx s13 KA24DE</h3>
                 <p class="products__price">$5,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>
             <article class="products__item">
                 <img src="img/catbackcivic0611.jpg" alt="Catback r18" class="products__img">
                 <h3 class="products__title">Catback Civic 06-11 R18</h3>
                 <p class="products__price">$4,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>  
             <article class="products__item">
                 <img src="img/coldairintaker18.jpg" alt="Cold air intake r18" class="products__img">
                 <h3 class="products__title">Cold Air Intake Civic 06-11 R18</h3>
                 <p class="products__price">$2,000.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </article>            
         </section>
 
         <section class="cart">
+            <button class="cart__close">✕</button>
             <h2>CARRITO</h2>
-            <div>
-                <img src="img/catbackcivic0611.jpg" alt="">
-                <p>Escape</p>
-                <p>$4,000.00</p>
-                <i><img src="img/cross_391116.png" alt="Icono Quitar" class="delete-icon"></i>
-            </div>
-            <div>
-                <img src="img/catbackcivic0611.jpg" alt="">
-                <p>Escape</p>
-                <p>$4,000.00</p>
-                <i><img src="img/cross_391116.png" alt="Icono Quitar" class="delete-icon"></i>
-            </div>
+            <div class="cart__items"></div>
         </section>
     </main>
 </body>
